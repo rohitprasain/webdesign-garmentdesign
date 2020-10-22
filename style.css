@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+    height: 5rem;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    background-color: black;
+
+}
+.burger{
+    flex: 1;
+    display: none;
+}
+
+.burger img{
+    height: 5rem;
+}
+
+.logo{
+    flex: 1;
+    margin-left: 7rem; 
+    cursor: pointer;
+}
+.logo img{
+    border-radius: 20%;
+
+}
+.navlinks{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold; 
+    cursor: pointer;
+
+}
+.services:hover{
+    color: grey;
+}
+
+section{
+    width: 100%;
+}
+
+
+.firstsection{
+    height:60vh;    
+    background-image: url(./images/Rectangle\ 3.png);
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.leftarrow, .rightarrow{
+    flex: 1;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.firstsectioninfo {
+    flex: 7;
+    font-size: 6rem;
+    color: black;
+    padding: 7rem;
+    text-transform: capitalize;
+    opacity: 60%;
+}
+.leftarrow img{
+    opacity: 70%;
+    width: 40%;
+    cursor: pointer;
+}
+.rightarrow img{
+    opacity: 70%;
+    width: 40%;
+    cursor: pointer;
+}
+.leftarrow img:hover{
+    opacity: 100%;
+}
+.rightarrow img:hover{
+    opacity: 100%;
+}
+
+.secondsection{
+    width: 100%;
+    background-color: white;
+}
+
+.flashsale{
+
+    height: 6vh;
+    color: black;
+    font-size: 2rem;
+    font-family: Lucida Fax;
+    text-transform: capitalize;
+    font-weight: 300;
+
+    box-sizing: border-box;
+    padding: 1rem 0 4rem 0rem;
+}
+
+.mainshop{
+    background: #EEEEEE;
+    padding-bottom: 0.1rem;
+}
+
+.shopnav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+
+.onsale{
+    flex: 1;
+    color: #FF9901;
+    height: 100%;
+    font-size: 1.8rem;
+
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.shopmore{
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin-right: 1rem ;
+}
+
+.shopmorebutton{
+    width: 7rem;
+    height: 80%;
+    text-transform: uppercase;
+    color: #FF9901;
+    background: white;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 10%;
+
+    cursor: pointer;
+
+}
+.shopmorebutton:hover{
+    background:lightgrey;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 1rem;
+}
+
+.firstcard, .secondcard, .thirdcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    background-color: white;
+}
+
+.firstimage , .secondimage, .thirdimage{
+    height: 25rem;
+
+    cursor: pointer;
+}
+
+.info{
+    text-transform: capitalize;
+}
+.price{
+    color: #FF9901;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+   
+    
+}
+.policy{
+    flex: 1;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.socialmedialinks{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+.socialmedialinks p{
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+}
+.sociallinks{
+    display: flex;
+    justify-content: center;
+}
+.sociallinks i{
+    margin:.5rem 1rem 0 .5rem;
+}
+
+
+@media only screen and (max-width:600px){
+
+    .logo img{
+        border-radius: 40%;
+    }
+    .firstsection p{
+        display: none;
+    }
+    p{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .services{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .burger img:hover{
+        cursor: pointer;
+        background-color: rgb(36, 29, 29);
+
+
+    }
+    .shopmorebutton{
+        margin-top: 1rem;
+        height: 60%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .info p{
+        font-size: 1.2rem;
+    }
+    .price p{
+        font-size: 1.2rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .policy p{
+        font-size: .9rem;
+    }
+    .follow p{
+        font-size: 0.9rem;
+    }
+
+} 
+
+@media only screen and (min-width:500px) and (max-width:992px){
+
+    
+    .firstsection p{
+        display: none;
+    }
+    .navlinks{
+        font-size: 1rem;
+    }
+   
+    .leftarrow , .rightarrow{
+        padding: 0;
+        opacity: 100%;
+    }
+    p{
+        font-size: 2.4rem;
+        margin-top: 1.2rem;
+    }
+    .shopmorebutton{
+        margin-top: 1.2rem;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .info p{
+        font-size: 1.2rem;
+    }
+    .price p{
+        font-size: 1.2rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .policy p{
+        font-size: 1rem;
+    }
+    .follow p{
+        font-size: 1rem;
+    }
+   
+
+} 
