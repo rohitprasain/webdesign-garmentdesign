@@ -6,47 +6,58 @@
 
 .navbar{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    height: 5rem;
     width: 100%;
 
     position: sticky;
     top: 0;
+
     background-color: black;
 
 }
-.burger{
-    flex: 1;
-    display: none;
-}
-
-.burger img{
-    height: 5rem;
-}
-
 .logo{
-    flex: 1;
-    margin-left: 7rem; 
-    cursor: pointer;
+    margin-left: 7rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+
 }
 .logo img{
-    border-radius: 20%;
-
+    border-radius: 10%;
 }
-.navlinks{
-    flex: 1;
+.navbar .mainmenu{
     display: flex;
-    justify-content: space-around;
-    
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navbar .mainmenu li a{
+    text-decoration: none;
+
     color: white;
-    font-size: 1.3rem;
-    font-weight: bold; 
+    margin: 2rem;
+}
+
+.navbar .mainmenu li a:hover{
+    font-size: 1.7rem;
+    color: orange;
+}
+.cart{
+    color: yellow;
     cursor: pointer;
+    margin-right: 2rem;
 
 }
-.services:hover{
-    color: grey;
+.cart:hover{
+    font-size: 2rem;
+    color: cyan;
+}
+.navbar .burger , .closeburger ,.icons{
+
+    font-size: 2rem;
+    color: white;
+    display: none;
 }
 
 section{
@@ -234,66 +245,20 @@ section{
 }
 
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:992px){
 
-    .logo img{
-        border-radius: 40%;
+    .logo{
+        margin-left: 4rem;
     }
+    .navbar .mainmenu li a{
+        font-size: 1.2rem;
+        margin: 0.8rem;
+    }
+
     .firstsection p{
         display: none;
     }
-    p{
-        font-size: 1.5rem;
-        margin-top: 1rem;
-    }
-
-    .services{
-        display: none;
-    }
-    .burger{
-        display: block;
-    }
-    .burger img:hover{
-        cursor: pointer;
-        background-color: rgb(36, 29, 29);
-
-
-    }
-    .shopmorebutton{
-        margin-top: 1rem;
-        height: 60%;
-    }
-    .cards{
-        flex-direction: column;
-    }
-    .info p{
-        font-size: 1.2rem;
-    }
-    .price p{
-        font-size: 1.2rem;
-    }
-    .footer{
-        flex-direction: column;
-    }
-    .policy p{
-        font-size: .9rem;
-    }
-    .follow p{
-        font-size: 0.9rem;
-    }
-
-} 
-
-@media only screen and (min-width:500px) and (max-width:992px){
-
-    
-    .firstsection p{
-        display: none;
-    }
-    .navlinks{
-        font-size: 1rem;
-    }
-   
+  
     .leftarrow , .rightarrow{
         padding: 0;
         opacity: 100%;
@@ -323,6 +288,99 @@ section{
     .follow p{
         font-size: 1rem;
     }
-   
+} 
 
+
+@media only screen and (max-width:600px){
+    
+ 
+    .logo{
+        margin-left: 1rem;
+    }
+    .navbar .burger{
+        display: inline;
+        margin-right: 20px;
+    }
+
+   
+    .navbar .mainmenu{
+        display: none;
+
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: black;
+
+        transition: 1s top ease;
+    }
+
+    .navbar .mainmenu li a{
+        color: cyan;
+    }
+    .navbar .mainmenu li {
+        margin-top: 2rem;
+    }
+
+    .navbar .mainmenu li a:hover{
+        background: none;
+        color: orange;
+
+        font-size: 2rem;
+
+    }
+    .cart{
+        color: palevioletred;
+        margin-top: 1.5rem;
+        margin-right: 0;
+    }
+
+    .navbar .closeburger{
+        display: inline;
+
+        position: absolute;
+        top: 1rem;
+        right: 2.3rem;
+    }
+
+    .navbar .icons{
+        margin-top: 2rem;
+        display: inline;
+    }
+
+    .fa-facebook:hover {color: rgb(0, 110, 255);}
+    .fa-twitter:hover {color: rgb(86, 154, 243);}
+    .fa-instagram:hover {color: rgb(255, 0, 191);}
+    .fa-github:hover {color: rgb(255, 123, 0);}
+
+    p{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .shopmorebutton{
+        margin-top: 1rem;
+        height: 60%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .info p{
+        font-size: 1.2rem;
+    }
+    .price p{
+        font-size: 1.2rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .policy p{
+        font-size: .9rem;
+    }
+    .follow p{
+        font-size: 0.9rem;
+    }
 } 

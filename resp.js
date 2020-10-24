@@ -1,25 +1,16 @@
-// burgerimage = document.querySelector('.burger');
-// navbar = document.querySelector('.navbar');
-// navlinks = document.querySelector('.navlinks');
+mainmenu = document.querySelector('.mainmenu')
+
+burger = document.querySelector('.burger')
+
+closeburger = document.querySelector('.closeburger')
 
 
-// burgerimage.addEventListener('click' , ()=>{
+burger.addEventListener('click' , () => {
+    mainmenu.style.display = 'flex';
+    mainmenu.style.top = '0';
+})
 
-// 	// navbar.classList.toggle('navbarresp');
+closeburger.addEventListener('click' , () => {
+    mainmenu.style.top = '-100%';
+})
 
-//     // navlinks.classList.toggle('navlinksresp');
-//     alert("hello");
-
-// })
-
-
-function myfunction(){
-    // alert("hello");
-    var x = document.getElementsByClassName("services");
-    // if (x.style.display === "block") {
-    //     x.style.display = "none";
-    //   } else {
-    //     x.style.display = "block";
-    //   }
-    console.log(x)
-}

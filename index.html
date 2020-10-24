@@ -8,28 +8,35 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="./resp.js"></script>
     <title>Kaji Garment</title>
 </head>
 
 <body>
     <div class="navbar">
-        <div class="logo">
+        <div class="logo ">
             <img src="./images/kaji 1.png" alt="kajilogo">
         </div>
-        <div class="navlinks">
 
-            <div class="services">Home</div>
-            <div class="services">Store</div>
-            <div class="services">Buy</div>
-            <div class="services">Contact Us</div>
+        <div class="burger"><i class="fas fa-bars"></i></div>
+        <ul class="mainmenu">
+            <li><a href="#home" class="home">Home</a></li>
+            <li><a href="#about" class="store">Store</a></li>
+            <li><a href="#our_team" class="buy">Buy</a></li>
+            <!-- <li><a href="#our_team" class="contactus">Contact Us</a></li> -->
+            <div class="cart"><i class="fas fa-cart-plus"></i></div>
 
-        </div>
+            <div class="closeburger"><i class="fas fa-times"></i></div>
 
-        <div class="burger">
-          <a href="javascript:void(0);" onclick="myfunction()"> <img class = "burgerimage" src="./images/white-menu-icon-12.jpg" alt="hamburgermenu">
-          </a></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+            </span>
+        </ul>
     </div>
+
+
     <section>
 
 
@@ -118,6 +125,11 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="./resp.js"></script>
 </body>
+
+
+
 
 </html>
